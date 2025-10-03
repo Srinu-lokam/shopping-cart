@@ -256,3 +256,71 @@ h1 {
   cursor: pointer;
   font-weight: bold;
 }
+
+/* =======================
+   Additional Mobile Grid CSS
+======================= */
+
+/* Large mobiles / small tablets */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+  }
+
+  .product img {
+    height: 180px;
+  }
+
+  .product p {
+    font-size: 14px;
+    margin-top: -5px;
+  }
+
+  .product button {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+/* Medium mobiles */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 12px;
+  }
+
+  .product img {
+    height: 160px;
+  }
+
+  .product p {
+    font-size: 13px;
+  }
+
+  .product button {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 400px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 10px;
+  }
+
+  .product img {
+    height: 140px;
+  }
+
+  .product p {
+    font-size: 12px;
+  }
+
+  .product button {
+    font-size: 11px;
+    padding: 3px 5px;
+  }
+}
