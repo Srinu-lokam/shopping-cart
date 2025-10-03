@@ -23,9 +23,9 @@ function renderProducts(products) {
       <img src="${apiUrl + p.imageUrl}" alt="${p.name}">
       <div class="price-tag">
         <h4>${p.name}</h4>
-        <p>&#8377;${p.discountedPrice.toLocaleString('en-IN')} &nbsp;
-          <span>&#8377;${p.originalPrice.toLocaleString('en-IN')}</span> &nbsp;
-          <span>${p.discountPercent}% Off</span>
+        <p>&#8377;${p.discountedPrice.toLocaleString('en-IN')}&nbsp;
+          <span>&#8377;${p.originalPrice.toLocaleString('en-IN')}</span>&nbsp;
+          <span>${p.discountPercent}%off</span>
         </p>
         <button onclick="addToCart(${p.id}, '${p.name}', ${p.discountedPrice}, '${apiUrl + p.imageUrl}', ${p.originalPrice}, ${p.discountPercent})">
           <i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Add to Cart

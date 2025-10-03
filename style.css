@@ -293,15 +293,15 @@ h1 {
 
   /* Reduce product font sizes and button */
   .product p {
-    font-size: 13px;
+    font-size: 11px;
     margin-top: -5px;
   }
 
   .product p span {
-    font-size: 10px;
+    font-size: 9px;
   }
   .product p span:last-child {
-    font-size: 10px;
+    font-size: 9px;
   }
   .product h4{
     font-size: 14px;
